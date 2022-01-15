@@ -1,0 +1,196 @@
+*{
+  font-family: 'Alegreya Sans SC', Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: red;
+  margin: 0px;
+  padding: 0px;
+}
+
+  
+/* ///////////////////// */
+/* AQUI VA EL HEADER */
+/* ///////////////////// */
+.contenedor-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center;
+  width: 100vw;
+}
+
+.imagen-pokebola {
+  width:15%;
+  height: auto;
+}
+
+.titulo-pokedex {
+  color: white;
+  font-size: 10vw;
+}
+
+
+/* ///////////////////// */
+/*AQUI VA EL MAIN CONTENT*/
+/* ///////////////////// */
+@media only screen and (min-width: 600px) {
+    .contenedor-main {
+      display: flex;
+      flex-direction: column nowrap;
+      justify-content: center; 
+    }
+}
+
+
+
+.contenedor-pikachu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+
+.contenedor-header-pikachu {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+
+  width: 60%;
+  height: auto;
+  max-height: 250px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.imagen-rayo {
+  width:15%;
+  height: auto;
+}
+
+.titulo-Pikachu {
+  font-size: 7vw;
+}
+
+
+
+.contenedor-imagen-Pikachu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+.imagen-Pikachu {
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  min-width: 40%;
+  width:70%;
+  height: auto;
+}
+.contenedor-caracteristicas-pokemon {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 10px;
+  background-color: rgba(255, 0, 255, 1); /* Testeo con color */
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 650px) {
+    .contenedor-caracteristicas-pokemon {
+      margin: 2vw;
+      flex-flow: row wrap;
+      max-width:  270px;
+      max-height: 270px;
+      background-color: rgba(0, 0, 255, 1); /* Testeo con color */
+    }   
+}
+
+@media only screen and (min-width: 650px) {
+    .contenedor-header-pikachu {
+      max-width:  270px;
+      max-height: 80px;
+    }   
+}
+
+@media only screen and (min-width: 650px) {
+    .bloque-footer {
+      position: fixed; /*TODO: REVISAR HAY QUE PONER LA BARRA BLANCA EN EL FONDO DE LA PANTALLA*/
+    }   
+}
+
+
+.bloque-caracteristicas {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+  height: 80px;
+  width:  80px;
+  border-radius: 20%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bloque-caracteristicas:hover {
+  box-shadow: 0 4px 8px 0 rgba(182, 230, 9, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contenedor-pokemon:hover {
+  cursor: pointer;
+  height: 90px;
+  width:  90px;
+  background: rgba(255, 255, 255, 1);
+}
+
+.header-caracteristicas {
+  height: 30px;
+}
+
+
+/* ///////////////////// */
+/* AQUI VA EL FOOTER*/
+/* ///////////////////// */
+.bloque-footer {
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+  background-color: rgba(255, 255, 255, 1); 
+  width:100%;
+}
+
+.bloque-texto-footer {
+  color: rgb(0, 0, 0);
+  padding: 1px;
+  text-align: center;
+}
+
+.contenedor-bloque-pokemon {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center; 
+  justify-content: center; 
+  gap: 5px 15px;
+  background-color: rgba(163, 230, 198, 0);
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+.contenedor-pokemon {
+  display: flex;
+  background-color: rgba(186, 212, 40, 0.1);
+  height: 80px;
+  width:  80px;
+  border-radius: 50%;
+  margin: 5px 2px;
+  border-style: solid;
+  align-items: center; 
+  justify-content: center;
+}
